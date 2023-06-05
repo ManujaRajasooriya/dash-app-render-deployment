@@ -43,7 +43,7 @@ server = app.server
 app.layout = html.Div(
     children=[
     
-    html.H1('CO544-2023 Lab 3: Wine-Quality Prediction'),
+    html.H1('CO544-2023 Lab 3: Wine-Quality Prediction', style={'text-align': 'center'}),
     
     html.Div([
         html.H3('Exploratory Data Analysis'),
