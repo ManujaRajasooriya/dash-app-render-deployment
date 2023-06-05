@@ -67,60 +67,38 @@ app.layout = html.Div(
     dcc.Graph(id='correlation_plot'),
     
     # Wine quality prediction based on input feature values
-   html.H3("Wine-Quality Prediction"),
-html.Div([
+    html.H3("Wine Quality Prediction"),
     html.Div([
         html.Label("Fixed Acidity"),
-        dcc.Input(id='fixed_acidity', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Div([
+        dcc.Input(id='fixed_acidity', type='number', required=True),    
         html.Label("Volatile Acidity"),
-        dcc.Input(id='volatile_acidity', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Div([
+        dcc.Input(id='volatile_acidity', type='number', required=True), 
         html.Label("Citric Acid"),
-        dcc.Input(id='citric_acid', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Br(),
-
-    html.Div([
+        dcc.Input(id='citric_acid', type='number', required=True),
+        html.Br(),
+        
         html.Label("Residual Sugar"),
-        dcc.Input(id='residual_sugar', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Div([
+        dcc.Input(id='residual_sugar', type='number', required=True),  
         html.Label("Chlorides"),
-        dcc.Input(id='chlorides', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Div([
+        dcc.Input(id='chlorides', type='number', required=True), 
         html.Label("Free Sulfur Dioxide"),
-        dcc.Input(id='free_sulfur_dioxide', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Br(),
-
-    html.Div([
+        dcc.Input(id='free_sulfur_dioxide', type='number', required=True),
+        html.Br(),
+        
         html.Label("Total Sulfur Dioxide"),
-        dcc.Input(id='total_sulfur_dioxide', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Div([
+        dcc.Input(id='total_sulfur_dioxide', type='number', required=True),
         html.Label("Density"),
-        dcc.Input(id='density', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Div([
+        dcc.Input(id='density', type='number', required=True),
         html.Label("pH"),
-        dcc.Input(id='ph', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Br(),
-
-    html.Div([
+        dcc.Input(id='ph', type='number', required=True),
+        html.Br(),
+        
         html.Label("Sulphates"),
-        dcc.Input(id='sulphates', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Div([
+        dcc.Input(id='sulphates', type='number', required=True),
         html.Label("Alcohol"),
-        dcc.Input(id='alcohol', type='number', required=True)
-    ], style={'display': 'inline-block', 'width': '30%'}),
-    html.Br(),
-], style={'text-align': 'center'})
+        dcc.Input(id='alcohol', type='number', required=True),
+        html.Br(),
+    ]),
 
 
     html.Div([
